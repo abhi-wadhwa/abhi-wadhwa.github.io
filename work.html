@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Experience | Abhi Wadhwa</title>
+  <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom configuration for default font (Inter) and smooth background */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc; /* Cool Gray 50 */
+      color: #1e293b; /* Slate 800 */
+    }
+    .container {
+      max-width: 1024px;
+    }
+    .page-header {
+      border-bottom: 2px solid #e2e8f0; /* Slate 200 */
+    }
+    /* Simple utility to simulate a glass-like shadow */
+    .shadow-glass {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    .shadow-glass:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-text': '#1e293b',
+            'secondary-text': '#64748b', /* This was the original secondary-text color */
+            'border-light': '#e2e8f0',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="p-4 md:p-8">
+  <div class="container mx-auto">
+    <!-- Header --><header class="page-header flex justify-between items-baseline pb-4 mb-8">
+      <h1 class="text-4xl font-extrabold text-primary-text">Work Experience</h1>
+      <a class="text-sm text-secondary-text hover:text-blue-600 transition duration-150" href="./index.html">← Back to Home</a>
+    </header>
+
+    <!-- Experience Cards Grid --><div class="space-y-10">
+
+      <!-- 1) Optiver --><section id="optiver" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="md:flex md:space-x-6">
+          <!-- Logo & Placeholder --><div class="flex-shrink-0 mb-4 md:mb-0">
+            <img 
+              src="./assets/Optiver.jpeg"" 
+              alt="Optiver Logo" 
+              class="w-24 h-24 rounded-lg object-cover"
+              onerror="this.onerror=null; this.src='https://placehold.co/96x96/10B981/ffffff?text=OPT';"
+            >
+          </div>
+          
+          <!-- Content --><div class="flex-grow">
+            <!-- New Header Structure: Company (H2) | Date (Top Right) / Role (P) | Location (Second Row Right) --><div class="flex justify-between items-start mb-1">
+              <div class="flex-1 min-w-0">
+                <!-- Company Name (Top Left, Big Bold) --><h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">Optiver</h2>
+                <!-- Role (Second Row, Top Left) --><p class="text-xl font-medium text-secondary-text mb-1">Quantitative Trader Intern</p>
+              </div>
+              
+              <!-- Date & Location Block (Top Right) --><div class="text-right flex-shrink-0 ml-4 pt-1">
+                 <!-- Date (Top Right, first row) - Now simple text --><p class="text-base text-gray-700 font-bold leading-none mb-1">Jun. 2026 – Aug. 2026</p>
+                 <!-- Location (Second Row Right) - Now text-gray-800 --><p class="text-base text-gray-800 leading-none">Chicago, IL</p>
+              </div>
+            </div>
+            
+            <p class="text-secondary-text mb-4 text-base leading-relaxed">
+              Trading intern specializing in option market-making and systematic strategies under uncertainty.
+              Focused on developing fast, data-driven models for implied volatility forecasting and
+              order-book optimization using statistical and game-theoretic frameworks.
+            </p>
+
+            <!-- Details Grid --><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Implied volatility surface modeling</li>
+                  <li>Market microstructure &amp; order-book dynamics</li>
+                  <li>Time-value decay and edge discovery</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Statistical arbitrage &amp; signal extraction</li>
+                  <li>Monte Carlo pricing &amp; risk-neutral modeling</li>
+                  <li>Real-time decision algorithms under latency constraints</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Python/C++ backtesting suite for high-frequency signals</li>
+                  <li>Option pricing simulators with custom Greeks engine</li>
+                  <li>Metrics dashboards for trade performance attribution</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Market-making automation under uncertainty</li>
+                  <li>Hedging, quoting, and risk calibration strategies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2) TPG (Iron Pillar) --><section id="tpg" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="md:flex md:space-x-6">
+          <!-- Logo & Placeholder --><div class="flex-shrink-0 mb-4 md:mb-0">
+            <img 
+              src="./assets/TPG.jpeg" 
+              alt="TPG Logo" 
+              class="w-24 h-24 rounded-lg object-cover"
+              onerror="this.onerror=null; this.src='https://placehold.co/96x96/F59E0B/ffffff?text=TPG';"
+            >
+          </div>
+          
+          <!-- Content --><div class="flex-grow">
+            <!-- New Header Structure: Company (H2) | Date (Top Right) / Role (P) | Location (Second Row Right) --><div class="flex justify-between items-start mb-1">
+              <div class="flex-1 min-w-0">
+                <!-- Company Name (Top Left, Big Bold) --><h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">TPG NewQuest</h2>
+                <!-- Role (Second Row, Top Left) --><p class="text-xl font-medium text-secondary-text mb-1">Private Equity Intern</p>
+              </div>
+              
+              <!-- Date & Location Block (Top Right) --><div class="text-right flex-shrink-0 ml-4 pt-1">
+                 <!-- Date (Top Right, first row) - Now simple text --><p class="text-base text-gray-700 font-bold leading-none mb-1">Jun. 2025 – Aug. 2025</p>
+                 <!-- Location (Second Row Right) - Now text-gray-800 --><p class="text-base text-gray-800 leading-none">Dubai, UAE </p>
+              </div>
+            </div>
+            
+            <p class="text-secondary-text mb-4 text-base leading-relaxed">
+              Conducted due diligence, valuation modeling, and sector research for late-stage venture and secondary investments.
+              Specialized in technology growth sectors, with emphasis on quantitative screening, portfolio modeling, and capital efficiency analysis.
+            </p>
+
+            <!-- Details Grid --><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Secondary transactions &amp; growth equity</li>
+                  <li>Capital structure optimization</li>
+                  <li>Cross-sector financial analysis</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>DCF &amp; LBO modeling (Python/Excel)</li>
+                  <li>Scenario-based valuation &amp; Monte Carlo sensitivity</li>
+                  <li>Market sizing &amp; KPI regression models</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Automated model templates for deal evaluation</li>
+                  <li>Sector research decks &amp; competitive benchmarking</li>
+                  <li>Portfolio risk dashboards</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Capital deployment strategies in tech sectors</li>
+                  <li>Fund performance monitoring &amp; optimization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3) The World Bank --><section id="worldbank" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="md:flex md:space-x-6">
+          <!-- Logo & Placeholder --><div class="flex-shrink-0 mb-4 md:mb-0">
+            <img 
+              src="./assets/worldbank.jpeg"
+              alt="The World Bank Logo" 
+              class="w-24 h-24 rounded-lg object-cover"
+              onerror="this.onerror=null; this.src='https://placehold.co/96x96/3B82F6/ffffff?text=WB';"
+            >
+          </div>
+          
+          <!-- Content --><div class="flex-grow">
+            <!-- New Header Structure: Company (H2) | Date (Top Right) / Role (P) | Location (Second Row Right) --><div class="flex justify-between items-start mb-1">
+              <div class="flex-1 min-w-0">
+                <!-- Company Name (Top Left, Big Bold) --><h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">The World Bank</h2>
+                <!-- Role (Second Row, Top Left) --><p class="text-xl font-medium text-secondary-text mb-1">Machine Learning Researcher</p>
+              </div>
+              
+              <!-- Date & Location Block (Top Right) --><div class="text-right flex-shrink-0 ml-4 pt-1">
+                 <!-- Date (Top Right, first row) - Now simple text --><p class="text-base text-gray-700 font-bold leading-none mb-1">Oct. 2024 – Apr. 2025</p>
+                 <!-- Location (Second Row Right) - Now text-gray-800 --><p class="text-base text-gray-800 leading-none"> Los Angeles, CA</p>
+              </div>
+            </div>
+            
+            <p class="text-secondary-text mb-4 text-base leading-relaxed">
+              Designed spatial alignment algorithms for large-scale socioeconomic datasets, improving cross-region comparability and data quality.
+              Integrated geostatistical and machine-learning approaches for cross-country policy forecasting and infrastructure analysis.
+            </p>
+
+            <!-- Details Grid --><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Spatial data harmonization &amp; mapping</li>
+                  <li>Geostatistical noise filtering</li>
+                  <li>Cross-country model calibration</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Spatial regression &amp; kriging techniques</li>
+                  <li>Neural alignment &amp; unsupervised embedding</li>
+                  <li>Cross-validation on country-level data</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Spatial matching library in Python</li>
+                  <li>Automated feature-alignment toolkit</li>
+                  <li>Published visualization dashboards (Plotly)</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Development policy optimization</li>
+                  <li>Infrastructure investment targeting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) RBC Capital Markets --><section id="rbc" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="md:flex md:space-x-6">
+          <!-- Logo & Placeholder --><div class="flex-shrink-0 mb-4 md:mb-0">
+            <img 
+              src="./assets/rbc.jpeg"
+              alt="RBC Capital Markets Logo" 
+              class="w-24 h-24 rounded-lg object-cover"
+              onerror="this.onerror=null; this.src='https://placehold.co/96x96/EF4444/ffffff?text=RBC';"
+            >
+          </div>
+          
+          <!-- Content --><div class="flex-grow">
+            <!-- New Header Structure: Company (H2) | Date (Top Right) / Role (P) | Location (Second Row Right) --><div class="flex justify-between items-start mb-1">
+              <div class="flex-1 min-w-0">
+                <!-- Company Name (Top Left, Big Bold) --><h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">RBC Capital Markets</h2>
+                <!-- Role (Second Row, Top Left) --><p class="text-xl font-medium text-secondary-text mb-1">Investment Banking Apprentice</p>
+              </div>
+              
+              <!-- Date & Location Block (Top Right) --><div class="text-right flex-shrink-0 ml-4 pt-1">
+                 <!-- Date (Top Right, first row) - Now simple text --><p class="text-base text-gray-700 font-bold leading-none mb-1">Sept. 2024 – Feb. 2025</p>
+                 <!-- Location (Second Row Right) - Now text-gray-800 --><p class="text-base text-gray-800 leading-none">New York City, NY</p>
+              </div>
+            </div>
+            
+            <p class="text-secondary-text mb-4 text-base leading-relaxed">
+              Supported deal execution and valuation modeling for capital markets transactions. 
+              Worked across financial modeling, market data analysis, and client deliverables within the industrials and TMT coverage groups.
+            </p>
+
+            <!-- Details Grid --><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Comparable company &amp; precedent transaction analysis</li>
+                  <li>Financial model building &amp; projection stress-testing</li>
+                  <li>Transaction materials and pitch decks</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>DCF, merger, and accretion/dilution analysis</li>
+                  <li>Bloomberg Terminal analytics and Excel automation</li>
+                  <li>Scenario modeling &amp; sensitivity testing</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Financial model repository (Excel/Python)</li>
+                  <li>Pitch deck templates for coverage teams</li>
+                  <li>Market analysis reports and dashboards</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+                <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                  <li>Equity &amp; debt offering support</li>
+                  <li>Client advisory &amp; valuation insight generation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research | Abhi Wadhwa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom configuration for default font (Inter) and smooth background */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc; /* Cool Gray 50 */
+      color: #1e293b; /* Slate 800 */
+    }
+    .container {
+      max-width: 1024px;
+    }
+    .page-header {
+      border-bottom: 2px solid #e2e8f0; /* Slate 200 */
+    }
+    /* Simple utility to simulate a glass-like shadow */
+    .shadow-glass {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    .shadow-glass:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-text': '#1e293b',
+            'secondary-text': '#64748b', /* This was the original secondary-text color */
+            'border-light': '#e2e8f0',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="p-4 md:p-8">
+  <div class="container mx-auto">
+    <header class="page-header flex justify-between items-baseline pb-4 mb-8">
+      <h1 class="text-4xl font-extrabold text-primary-text">Research & Projects</h1>
+      <a class="text-sm text-secondary-text hover:text-blue-600 transition duration-150" href="./index.html">← Back to Home</a>
+    </header>
+
+    <div class="space-y-10">
+
+      <section id="spielman-teng" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="flex-grow">
+          <div class="flex justify-between items-start mb-1">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">Random Matrix Theory for High-Dimensional Sub-Gaussian Models</h2>
+              <p class="text-xl font-medium text-secondary-text mb-1">Exploration of the Spielman–Teng Conjecture through spectral analysis.</p>
+            </div>
+            
+            <div class="text-right flex-shrink-0 ml-4 pt-1">
+               <p class="text-base text-gray-700 font-bold leading-none mb-1">2025</p>
+               <p class="text-base text-gray-800 leading-none">USC Department of Mathematics</p>
+            </div>
+          </div>
+          
+          <p class="text-secondary-text mb-4 text-base leading-relaxed">
+            Exploration of the Spielman–Teng Conjecture through spectral analysis of sub-Gaussian random matrices, focusing on denoising applications and efficient eigenvalue estimation techniques for high-dimensional modeling.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>BBP transitions &amp; detectability thresholds</li>
+                <li>Sub-Gaussian tails &amp; non-asymptotic bounds</li>
+                <li>Eigenvector delocalization &amp; bias control</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Marchenko–Pastur &amp; Tracy–Widom regimes</li>
+                <li>Shrinkage covariance &amp; spiked inference</li>
+                <li>Monte-Carlo &amp; finite-sample diagnostics</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Prototype spectral denoiser (Python)</li>
+                <li>Benchmarks on synthetic &amp; public data</li>
+                <li>Notes on practical spectral thresholds</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Risk de-noising for portfolios</li>
+                <li>Pre-whitening for ML pipelines</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="measure" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="flex-grow">
+          <div class="flex justify-between items-start mb-1">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">Measure-Theoretic Foundations for Stochastic Control &amp; MDPs</h2>
+              <p class="text-xl font-medium text-secondary-text mb-1">Foundations for martingale theory and optimal control in Machine Learning.</p>
+            </div>
+            
+            <div class="text-right flex-shrink-0 ml-4 pt-1">
+               <p class="text-base text-gray-700 font-bold leading-none mb-1">2024</p>
+               <p class="text-base text-gray-800 leading-none">USC Department of Mathematics</p>
+            </div>
+          </div>
+          
+          <p class="text-secondary-text mb-4 text-base leading-relaxed">
+            *Measure Theory and Fine Proprties of Functions* by Evans, emphasizing $\sigma$-algebras, integration, and convergence theorems as the foundation for martingale theory in stochastic processes, with applications to optimal control and Markov decision processes for Machine Learning.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Borel MDPs &amp; measurable selectors</li>
+                <li>Contractions of Bellman operators</li>
+                <li>Average- vs. discounted-cost criteria</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Martingales &amp; optional stopping</li>
+                <li>Fixed-point theorems</li>
+                <li>Ergodicity/recurrence conditions</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Clean convergence proofs (notes)</li>
+                <li>Reference guide on measurability subtleties</li>
+                <li>Small-state MDP demos</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Safe RL policy regularity</li>
+                <li>Operations &amp; finance control</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="policy" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="flex-grow">
+          <div class="flex justify-between items-start mb-1">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">Convex Optimization for Multi-Objective Dynamic Policy Systems</h2>
+              <p class="text-xl font-medium text-secondary-text mb-1">Casting intertemporal policy trade-offs as constrained convex programs.</p>
+            </div>
+            
+            <div class="text-right flex-shrink-0 ml-4 pt-1">
+               <p class="text-base text-gray-700 font-bold leading-none mb-1">2024</p>
+               <p class="text-base text-gray-800 leading-none">USC Marshall School of Business</p>
+            </div>
+          </div>
+          
+          <p class="text-secondary-text mb-4 text-base leading-relaxed">
+            Casting intertemporal policy trade-offs as constrained convex programs with equilibrium consistency; deriving implementable rules with interpretable multipliers and sensitivity analysis.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Pareto frontiers &amp; welfare weights</li>
+                <li>Time-coupled feasibility constraints</li>
+                <li>Shadow prices as policy signals</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>KKT &amp; duality; saddle-point analysis</li>
+                <li>Primal–dual &amp; projected-gradient schemes</li>
+                <li>Robustness &amp; sensitivity</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Prototype solver for dynamic convex programs</li>
+                <li>Trade-off visualizations &amp; dual dynamics</li>
+                <li>Write-up on multiplier interpretability</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Dynamic regulation with multiple targets</li>
+                <li>Mechanism design &amp; allocation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vaccine" class="r-block bg-white p-6 rounded-xl shadow-glass border border-border-light">
+        <div class="flex-grow">
+          <div class="flex justify-between items-start mb-1">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-3xl font-extrabold text-primary-text leading-tight truncate">Empirical Evaluation of Policy Effectiveness</h2>
+              <p class="text-xl font-medium text-secondary-text mb-1">Empirical analysis of public-policy interventions on multi-state datasets.</p>
+            </div>
+            
+            <div class="text-right flex-shrink-0 ml-4 pt-1">
+               <p class="text-base text-gray-700 font-bold leading-none mb-1">2021–2022</p>
+               <p class="text-base text-gray-800 leading-none">UC Berkeley Haas School of Business</p>
+            </div>
+          </div>
+          
+          <p class="text-secondary-text mb-4 text-base leading-relaxed">
+            Empirical analysis of public-policy interventions, assembling multi-state county-level datasets and evaluating program impact with careful normalization and validation pipelines.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 pt-2 border-t border-dashed border-gray-200">
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Focus</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Program uptake &amp; behavioral response</li>
+                <li>Data harmonization across jurisdictions</li>
+                <li>Robust baseline construction</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Methods</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Matching &amp; validation workflows</li>
+                <li>Panel data cleaning &amp; normalization</li>
+                <li>Exploratory causal diagnostics</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Artifacts</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>OpenRefine/SQL cleaning templates</li>
+                <li>Reproducible analysis scripts</li>
+                <li>Summary tables &amp; visualizations</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-sm uppercase text-gray-500 mb-1">Applications</h3>
+              <ul class="list-disc ml-4 text-sm text-primary-text space-y-0.5">
+                <li>Policy benchmarking &amp; targeting</li>
+                <li>Public-sector decision support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </div>
+</body>
+</html>

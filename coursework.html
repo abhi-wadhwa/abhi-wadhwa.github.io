@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coursework | Abhi Wadhwa</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; }
+    .shadow-glass { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.05); transition: all .3s ease; }
+    .shadow-glass:hover { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); transform: translateY(-2px); }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .chev { transform: rotate(90deg); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 p-4 md:p-8">
+  <div class="container mx-auto max-w-4xl">
+    <!-- Header -->
+    <header class="flex justify-between items-baseline pb-4 mb-8 border-b-2 border-slate-200">
+      <h1 class="text-4xl font-extrabold">Coursework</h1>
+      <a href="./index.html" class="text-sm text-slate-500 hover:text-blue-600 transition">← Back to Home</a>
+    </header>
+
+    <!-- Mathematics -->
+    <section aria-labelledby="math" class="mb-10">
+      <div class="bg-white border border-slate-200 rounded-xl shadow-glass p-6">
+        <h2 id="math" class="text-2xl font-bold text-slate-900 mb-4">Mathematics</h2>
+
+        <!-- MATH 126 -->
+        <details id="math-126" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 126</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Calculus II</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Trig functions; applications & techniques of integration; indeterminate forms; infinite/Taylor series; polar coordinates.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Stewart: Essential Calculus</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2023</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 226 -->
+        <details id="math-226" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 226</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Calculus III</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Vectors & vector-valued functions; multivariable calculus; Green/Divergence/Stokes theorems.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Stewart: Essential Calculus</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2023</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 245 -->
+        <details id="math-245" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 245</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Mathematics of Physics and Engineering</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            First/second-order ODEs; matrices; linear systems; Laplace transforms.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Polking & Boggess: Differential Equations</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 395 -->
+        <details id="math-395" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 395</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Problem Solving</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Competition-style problems: inequalities, series, combinatorics, number theory, games.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">No Textbook</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 407 -->
+        <details id="math-407" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 407</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Probability Theory</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Probability spaces; distributions; moments/characteristic functions; LLN; CLT; sequences of r.v.s.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Grimmett: Probability & Random Processes</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 408 -->
+        <details id="math-408" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 408</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Mathematical Statistics</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24  fill=\"none\"" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Estimation & testing; confidence intervals; MoM; MLE; information bounds; LRT; goodness-of-fit; nonparametrics.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Wackerly: Mathematical Statistics</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2025</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 425 -->
+        <details id="math-425" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 425</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Fundamental Concepts of Analysis</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Reals, metric spaces; limits/continuity; derivatives/integrals; series.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Rudin: Principles of Mathematical Analysis</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2025</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 454 -->
+        <details id="math-454" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 454</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Game Theory</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Zero/constant-sum; Nash; fixed points; evolutionary dynamics; signaling; coalitions; auctions; social choice.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Maschler: Game Theory</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2026</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 467 -->
+        <details id="math-467" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 467</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Theory & Computational Methods of Optimization</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Un/Constrained optimization; gradients & conjugate gradients; Lagrange multipliers; least-squares; linear & nonlinear DP.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Chong & Zak: Intro to Optimization</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2025</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 471 -->
+        <details id="math-471" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 471</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Topics in Linear Algebra</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Polynomial rings; vector spaces; linear maps; canonical forms; inner-product spaces.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Horn & Garcia: Matrix Mathematics</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2025</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 501 (Numerical Analysis) -->
+        <details id="math-501" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 501</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Numerical Analysis & Computation</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Linear systems & error; Newton/contractive maps; eigenproblems; least squares; quadrature; finite differences.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Graduate</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2026</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- MATH 505b -->
+        <details id="math-505b" class="group border border-slate-200 rounded-lg overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">MATH 505b</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Graduate Probability</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Markov & renewal processes; martingales; Brownian motion; diffusion; random walks; inventory/queue models; shot noise.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Grimmett Ch. 6–13</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Graduate</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2025</span>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- Economics, Accounting & Finance -->
+    <section aria-labelledby="eaf" class="mb-10">
+      <div class="bg-white border border-slate-200 rounded-xl shadow-glass p-6">
+        <h2 id="eaf" class="text-2xl font-bold text-slate-900 mb-4">Economics, Accounting & Finance</h2>
+
+        <!-- ECON 303 -->
+        <details id="econ-303" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">ECON 303</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Intermediate Microeconomic Theory</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Consumer/firm behavior; uncertainty; market structure; efficiency; externalities; policy.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Levitt & Goolsbee: Microeconomics</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- ECON 305 -->
+        <details id="econ-305" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">ECON 305</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Intermediate Macroeconomic Theory</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Income, employment, inflation; cycles; fiscal/monetary policy; financial markets; public debt.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Mankiw: Macroeconomics</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- BUAD 308 -->
+        <details id="buad-308" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">BUAD 308</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Advanced Business Finance</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Valuation; capital budgeting; risk/return; cost of capital; corporate policy.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">No Textbook</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- ACCT 410 -->
+        <details id="acct-410" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">ACCT 410</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Introduction to Accounting</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Financial & managerial accounting foundations for users of accounting information.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">No Textbook</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2025</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- FBE 423 -->
+        <details id="fbe-423" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">FBE 423</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Intro to Venture Capital & Private Equity</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Fundraising; startup valuation; VC securities; exits & IPOs.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">No Textbook</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2025</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- FBE 435 -->
+        <details id="fbe-435" class="group border border-slate-200 rounded-lg overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">FBE 435</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Applied Finance in Fixed Income Securities</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Fixed-income instruments; hedging tools; portfolio analysis.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">No Textbook</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2025</span>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- Philosophy, Politics, Cognitive Science & Linguistics -->
+    <section aria-labelledby="ppcsl" class="mb-10">
+      <div class="bg-white border border-slate-200 rounded-xl shadow-glass p-6">
+        <h2 id="ppcsl" class="text-2xl font-bold text-slate-900 mb-4">Philosophy, Politics, Cognitive Science & Linguistics</h2>
+
+        <!-- GESM 130 -->
+        <details id="gesm-130" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">GESM 130</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Psychology of Racial Bias</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            How human action & institutions shape/are shaped by social settings; evidence & mechanisms of bias.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2023</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- PHIL 166 -->
+        <details id="phil-166" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">PHIL 166</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Current Moral & Social Issues</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Ethical analysis of issues: abortion, euthanasia, death penalty, war, sexuality, affirmative action, justice.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- SWMS 219 -->
+        <details id="swms-219" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">SWMS 219</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Introduction to Feminist Theory</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Development of feminist thought; subjectivity; rights; alternative ideological perspectives.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2026</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- LAW 225 -->
+        <details id="law-225" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">LAW 225</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Current Court Cases</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Societal impact of legal decisions through analysis of pending/recent cases.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- PPD 225 -->
+        <details id="ppd-225" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">PPD 225</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Solving Public Problems</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Policy frameworks; institutions & processes; professional development for policymaking.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Fall 2023</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- PPD 240 -->
+        <details id="ppd-240" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">PPD 240</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Citizenship & Public Ethics</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Legal & ethical traditions of citizenship; implications for public management.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2024</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- PHIL 246 -->
+        <details id="phil-246" class="group border border-slate-200 rounded-lg overflow-hidden mb-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">PHIL 246</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Foundations of Cognitive Science</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Interdisciplinary survey across philosophy, psychology, linguistics, neuroscience, CS.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2026</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- LING 285 -->
+        <details id="ling-285" class="group border border-slate-200 rounded-lg overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer select-none px-4 py-3 bg-slate-50 hover:bg-slate-100">
+            <div class="min-w-0">
+              <p class="text-sm text-slate-500">LING 285</p>
+              <h3 class="text-lg font-semibold leading-tight truncate">Human Language & Technology</h3>
+            </div>
+            <svg class="chev h-4 w-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="px-4 py-3 text-sm text-slate-600 bg-white border-t border-slate-200">
+            Phonetics; signal processing; speech recognition; neural networks.
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">General Education</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-xs text-slate-600">Spring 2026</span>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
