@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhi Wadhwa | Applied Mathematics &amp; Finance</title>
   <style>
+    /* Import the Inter font for modern typography */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
     :root {
       --cardinal: #990000;
       --gold: #FFC72C;
@@ -15,45 +18,29 @@
       --max: 1100px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-    }
+    html, body { margin: 0; padding: 0; }
 
     body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      /* Font change applied here */
+      font-family: 'Inter', sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.5;
     }
 
-    a {
-      color: var(--cardinal);
-      text-decoration: none;
-    }
+    /* All links default to cardinal red */
+    a { color: var(--cardinal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 24px 24px;
-    }
+    .container { max-width: var(--max); margin: 0 auto; padding: 24px 24px; }
 
     /* --- Header --- */
     .header {
       display: grid;
-      grid-template-columns: 240px 1fr;
-      /* roomy image column */
-      gap: 48px;
-      /* breathing room between photo/text */
+      grid-template-columns: 240px 1fr; /* roomy image column */
+      gap: 48px; /* breathing room between photo/text */
       align-items: center;
       padding: 40px 0 28px;
       border-bottom: 1px solid var(--border);
@@ -64,8 +51,7 @@
       height: 240px;
       object-fit: cover;
       border-radius: 14px;
-      background: #ddd;
-      /* Placeholder background */
+      background: #ddd; /* Placeholder background */
     }
 
     .title {
@@ -93,10 +79,7 @@
       color: #000000;
     }
 
-    .subtitle .highlight {
-      color: var(--cardinal);
-      font-weight: 600;
-    }
+    .subtitle .highlight { color: var(--cardinal); font-weight: 600; }
 
     .tagline {
       margin: 8px 0 0;
@@ -104,15 +87,10 @@
       max-width: 72ch;
     }
 
-    .header>div {
-      padding-top: 8px;
-    }
-    /* visually center text block next to image */
+    .header > div { padding-top: 8px; } /* visually center text block next to image */
 
     /* --- Sections --- */
-    section {
-      padding: 18px 0 22px;
-    }
+    section { padding: 18px 0 22px; }
 
     h2 {
       font-size: 22px;
@@ -122,16 +100,12 @@
       border-bottom: 1px solid var(--border);
     }
 
-    /* --- Prose --- */
-    .prose {
-  max-width: none;
-  width: 100%;
-}
+    /* Ensure H2 links use the cardinal color */
+    h2 a { color: var(--cardinal) !important; text-decoration: none; }
 
-    .prose p {
-      margin: 10px 0;
-      line-height: 1.65;
-    }
+    /* --- Prose --- */
+    .prose { max-width: none; width: 100%; }
+    .prose p { margin: 10px 0; line-height: 1.65; }
 
     /* --- Barebones experience lists --- */
     .xp-list {
@@ -142,9 +116,7 @@
       list-style: none;
     }
 
-    .xp-item {
-      display: block;
-    }
+    .xp-item { display: block; }
 
     .xp-top {
       display: flex;
@@ -153,34 +125,14 @@
       align-items: baseline;
     }
 
-    .xp-role {
-      font-weight: 600;
-    }
+    .xp-role { font-weight: 600; color: var(--text); }
+    /* Ensure the company name part (the link) is cardinal red */
+    .xp-role a { color: var(--text); text-decoration: none; }
+    .xp-role em { font-style: normal; font-weight: 500; color: inherit; }
 
-    .xp-date {
-      color: var(--muted);
-      font-size: 14px;
-      white-space: nowrap;
-    }
+    .xp-date { color: var(--muted); font-size: 14px; white-space: nowrap; }
 
-    /* job title + role: full text color */
-    .xp-role {
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .xp-role em {
-      font-style: normal;
-      font-weight: 500;
-      color: inherit;
-      /* same color as .xp-role */
-    }
-
-    /* single-line description: muted */
-    .xp-desc {
-      margin: 2px 0 0;
-      color: var(--muted);
-    }
+    .xp-desc { margin: 2px 0 0; color: var(--muted); }
 
     /* --- Mobile --- */
     @media (max-width: 860px) {
@@ -190,40 +142,23 @@
         gap: 18px;
         padding: 24px 0 16px;
       }
-
-      .avatar {
-        justify-self: center;
-        width: 200px;
-        height: 200px;
-      }
-
-      .icons {
-        justify-content: center;
-      }
-
-      .tagline {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 68ch;
-      }
+      .avatar { justify-self: center; width: 200px; height: 200px; }
+      .icons { justify-content: center; }
+      .tagline { margin-left: auto; margin-right: auto; max-width: 68ch; }
     }
 
     /* Simple list for awards */
-    .list-simple p {
-      margin: 4px 0;
-    }
+    .list-simple p { margin: 4px 0; }
+    /* Ensure links within the simple list are cardinal red */
+    .list-simple a { color: var(--text); text-decoration: none; }
+
 
     @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #e7e9ee;
-        --muted: #b5bcc6;
-        --border: #2a2f36;
-        --bg: #0e1116;
-      }
-
-      a {
-        color: #ffb3b3;
-      }
+      :root { --text: #e7e9ee; --muted: #b5bcc6; --border: #2a2f36; --bg: #0e1116; }
+      a { color: #ffb3b3; }
+      h2 a { color: #ffb3b3 !important; }
+      .xp-role a { color: #ffb3b3; }
+      .list-simple a { color: #ffb3b3; }
     }
   </style>
 </head>
@@ -233,33 +168,31 @@
   <!-- HEADER -->
   <div class="container">
     <header class="header">
-      <!-- 
-        NOTE: You will need to replace this placeholder with a valid URL 
-        or a relative path to your image file.
-      -->
+      <!-- NOTE: Replace src with your actual image path if needed -->
       <img class="avatar" src="./assets/abhi.jpeg" alt="Abhi Wadhwa Headshot">
       <div>
         <h1 class="title">Abhi Wadhwa</h1>
 
         <div class="icons" aria-label="profile links">
           <!-- GitHub -->
-          <a href="https://github.com/abbieabbyabhi" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/abbieabbyabhi" target="_self" aria-label="GitHub">
             <svg viewBox="0 0 24 24" role="img">
               <path d="M12 .297a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61a3.17 3.17 0 0 0-1.33-1.75c-1.09-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.24 2.55 2.55 0 0 0 3.49 1 2.55 2.55 0 0 1 .76-1.6c-2.67-.3-5.47-1.34-5.47-5.94a4.65 4.65 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.22c0 4.62-2.81 5.64-5.49 5.93a2.85 2.85 0 0 1 .82 2.22v3.3c0 .32.22.7.82.58A12 12 0 0 0 12 .297z"></path>
             </svg>
           </a>
           <!-- X / Twitter -->
-          <a href="https://twitter.com/abbahehe" target="_blank" aria-label="Twitter / X">
+          <a href="https://twitter.com/abbahehe" target="_self" aria-label="Twitter / X">
             <svg viewBox="0 0 24 24" role="img">
               <path d="M18.36 2H21.64L14.24 10.06L22.44 22H15.7L10.62 14.75L4.82 22H1.54L9.34 13.39L1.44 2H8.34L12.9 8.67L18.36 2ZM17.2 19.92H19.06L7.42 3.95H5.44L17.2 19.92Z"></path>
             </svg>
           </a>
-          <!-- Google Scholar -->
-          <a href="https://www.linkedin.com/in/abhi-wadhwa" target="_blank" aria-label="LinkedIn">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/abhi-wadhwa" target="_self" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-8.1c0-1.93-.03-4.41-2.69-4.41-2.7 0-3.11 2.1-3.11 4.27V24h-4V8z"/>
             </svg>
           </a>
+          <!-- Email -->
           <a href="mailto:abhiwadh@usc.edu" aria-label="Email">
             <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 6 8-6V18H4z"/>
@@ -269,52 +202,54 @@
 
         <p class="subtitle"><strong>Applied Mathematics ∧ Finance ⊂ Dornsife ∧ Marshall ⊂ USC</strong></p>
 
-        <!-- Short, non-redundant tagline (keeps About for detail) -->
-        <p class="tagline">Interests: Machine Learning ∧ Optimization ∧ Game Theory ∧ Policy
-
-</p>
+        <!-- Shortened tagline -->
+        
+        <p class="tagline">Interests: Algorithmic Game Theory ∧ Machine Learning ∧ Optimization 
       </div>
     </header>
-  <!-- </div> --> <!-- REMOVED this extra closing tag -->
 
   <!-- MAIN -->
-  <!-- <main class="container"> --> <!-- REMOVED class="container" from main -->
-  <main> <!-- Replaced with a simple <main> tag -->
+  <main>
     <section>
       <div class="prose">
-        <p>Howdy! I’m Abhi and I study Applied Mathematics at USC on Scholarship.</p>
-        <p>I build models for decision-making under uncertainty using probability, optimization, and strategic interaction. Current work spans high-dimensional noise filtering with random matrix methods, stochastic control for Markov decision processes, and spatial alignment for large datasets. Previously, I’ve worked on spatial alignment models at the World Bank, theoretical machine learning (including transformer architectures), and policy analysis on inequality economics.</p>
-        <p>At the moment, I’m most interested in the intersection of machine learning, game theory, and optimization, particularly in developing algorithms that formalize reasoning and rational decision-making. My current work focuses on how principles from utility theory, strategic interaction, and iterative optimization can inform learning systems that reason about incentives, uncertainty, and trade-offs. Broadly, I’m fascinated by how game-theoretic and mathematical frameworks can advance interpretable, multi-agent AI systems capable of exhibiting strategic and goal-directed behavior.</p>
+        <p>Howdy! I’m Abhi and I study <a href="./coursework.html">Applied Mathematics</a> at USC on Scholarship, where I <a href="./awards.html">debate competitively</a> on the British Parliamentary circuit.</p>
+        <p>Current work spans high-dimensional noise filtering with random matrix methods and reinforcement learning for bounded rationality in games. Previously, I've worked on spatial alignment algorithms and theoretical machine learning. At the moment, I’m most interested in algorithms that formalize reasoning and rational decision-making. My current work focuses on how utility theory and iterative optimization can inform learning systems that reason about incentives, uncertainty, and trade-offs.</p>
+        <p>Feel free to check out my resume below. Everything is <a>hyperlinked</a> for more information.</p>
       </div>
     </section>
 
     <section>
-      <h2>Work</h2>
+      <!-- Work header is now cardinal red via default CSS link style -->
+      <h2><a href="./work.html">Work</a></h2>
       <ul class="xp-list">
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://www.optiver.com/" target="_blank">Optiver</a> · <em>Quantitative Trader Intern</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./work.html#optiver" target="_self">Optiver</a> · <em>Quantitative Trader Intern</em></div>
             <div class="xp-date">2026</div>
           </div>
           <div class="xp-desc">Semi-systematic trading strategies in high-frequency options market making.</div>
         </li>
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://www.tpg.com/platforms/market-solutions/tpg-newquest" target="_blank">TPG</a> · <em>Private Equity Intern</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./work.html#tpg" target="_self">TPG: Iron Pillar Fund</a> · <em>Private Equity Intern</em></div>
             <div class="xp-date">2025</div>
           </div>
           <div class="xp-desc">Venture growth &amp; secondary investments for a tech-focused private equity fund.</div>
         </li>
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://www.worldbank.org/en/about/people/r/ruozi-song" target="_blank">The World Bank</a> · <em>Machine Learning Researcher</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./work.html#worldbank">The World Bank</a> · <em>Machine Learning Researcher</em></div>
             <div class="xp-date">2024–2025</div>
           </div>
           <div class="xp-desc">Spatial alignment algorithms and ML for large-scale data integration.</div>
         </li>
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://www.rbccm.com/en/" target="_blank">RBC Capital Markets</a> · <em>Investment Banking Apprentice</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./work.html#rbc" target="_self">RBC Capital Markets</a> · <em>Investment Banking Apprentice</em></div>
             <div class="xp-date">2024–2025</div>
           </div>
           <div class="xp-desc">Capital markets analysis and financial modeling in investment banking.</div>
@@ -323,32 +258,37 @@
     </section>
 
     <section>
-      <h2>Research</h2>
+      <!-- Research header is now cardinal red via default CSS link style -->
+      <h2><a href="./research.html">Research</a></h2>
       <ul class="xp-list">
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://sites.google.com/usc.edu/uscmathdrp/home" target="_blank">USC Department of Mathematics</a> · <em>Undergraduate Researcher (advised by Zixiang Zhou)</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./research.html#spielman-teng" target="_self">USC Department of Mathematics</a> · <em>Undergraduate Researcher (advised by Zixiang Zhou)</em></div>
             <div class="xp-date">2025</div>
           </div>
           <div class="xp-desc">Random matrix theory for high-dimensional noise filtration.</div>
         </li>
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://sites.google.com/usc.edu/uscmathdrp/home" target="_blank">USC Department of Mathematics</a> · <em>Undergraduate Researcher (advised by Yunjie Fan)</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./research.html#measure" target="_self">USC Department of Mathematics</a> · <em>Undergraduate Researcher (advised by Yunjie Fan)</em></div>
             <div class="xp-date">2024</div>
           </div>
           <div class="xp-desc">Measure-theoretic frameworks for stochastic control in MDPs.</div>
         </li>
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://www.marshall.usc.edu/personnel/rodney-ramcharan" target="_blank">USC Marshall School of Business</a> · <em>Research Assistant (under Rodney Ramcharan)</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./research.html#policy" target="_self">USC Marshall School of Business</a> · <em>Research Assistant (under Rodney Ramcharan)</em></div>
             <div class="xp-date">2024</div>
           </div>
           <div class="xp-desc">Convex optimization for multi-dimensional dynamic policy systems.</div>
         </li>
         <li class="xp-item">
           <div class="xp-top">
-            <div class="xp-role"><a href="https://haas.berkeley.edu/" target="_blank">UC Berkeley Haas School of Business</a> · <em>Research Assistant (under Vivek Nandur)</em></div>
+            <!-- Link color is now cardinal red via default CSS link style -->
+            <div class="xp-role"><a href="./research.html#vaccine" target="_self">UC Berkeley Haas School of Business</a> · <em>Research Assistant (under Vivek Nandur)</em></div>
             <div class="xp-date">2022</div>
           </div>
           <div class="xp-desc">Strategy &amp; causal inference for game-theoretical policy frameworks.</div>
@@ -357,18 +297,21 @@
     </section>
 
     <section>
-      <h2>Awards &amp; Recognition</h2>
+      <!-- Awards header is now linked and cardinal red via default CSS link style -->
+      <h2><a href="./awards.html">Awards &amp; Recognition</a></h2>
       <div class="list-simple">
-        <p>2× British Mathematical Olympiad, 1× USAMO, 2× AIME, 5× UKMT Gold Medalist</p>
-        <p>Top 5 Novice Debate Teams @ North American University Debating Championships (NAUDC)</p>
-        <p>2× Team UAE Reserve Member @ World Schools Debate Championships (WSDC)</p>
+        <!-- Math Awards line is now a cardinal red link -->
+        <p><a href="./awards.html">2× British Mathematical Olympiad, 1× USAMO, 2× AIME, 5× UKMT Gold Medalist</a></p>
+        <!-- Debate line 1 is now cardinal red via default CSS link style -->
+        <p><a href="./awards.html">Top 5 Novice Debate Teams @ North American University Debating Championships (NAUDC)</a></p>
+        <!-- Debate line 2 is now cardinal red via default CSS link style -->
+        <p><a href="./awards.html">2× Team UAE Reserve Member @ World Schools Debate Championships (WSDC)</a></p>
         <p>Johns Hopkins University — Study of Exceptional Talent</p>
       </div>
     </section>
   </main>
-  </div> <!-- ADDED the closing container div here to wrap everything -->
+  </div> <!-- closing container -->
 
 </body>
 </html>
-
 
